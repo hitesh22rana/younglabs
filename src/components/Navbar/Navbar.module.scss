@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
+
+    > nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        padding: 2rem 10px;
+
+        @media (max-width: 500px) {
+            flex-direction: column;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 500px) {
+                margin: 10px auto;
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+
+            h2 {
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 1em;
+                margin: auto 8px;
+
+                &:nth-child(1) {
+                    border-bottom: 2px solid #e16259;
+                }
+            }
+        }
+    }
+}
